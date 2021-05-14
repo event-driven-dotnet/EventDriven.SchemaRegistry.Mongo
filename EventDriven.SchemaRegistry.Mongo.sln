@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{837BC0A4-198D-432E-BAA3-EDD5AC9D0EBC}"
+ProjectSection(SolutionItems) = preProject
+	ReadMe.md = ReadMe.md
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{26E3F4CB-B218-4330-8C43-7D5B30B75CF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventDriven.SchemaRegistry.Mongo", "src\EventDriven.SchemaRegistry.Mongo\EventDriven.SchemaRegistry.Mongo.csproj", "{0FDF1390-0A86-4D27-AFEF-4E0242058898}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FDF1390-0A86-4D27-AFEF-4E0242058898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDF1390-0A86-4D27-AFEF-4E0242058898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDF1390-0A86-4D27-AFEF-4E0242058898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDF1390-0A86-4D27-AFEF-4E0242058898}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0FDF1390-0A86-4D27-AFEF-4E0242058898} = {26E3F4CB-B218-4330-8C43-7D5B30B75CF2}
+	EndGlobalSection
+EndGlobal
