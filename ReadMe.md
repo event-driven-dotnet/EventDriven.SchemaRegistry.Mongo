@@ -5,7 +5,7 @@ A MongoDB state store for validating messages against schemas that are stored in
 ## Prerequisites
 - [.NET Core SDK](https://dotnet.microsoft.com/download) (5.0 or greater)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- MongoDB Docker: `docker run --name mongo -d -p 27017:27017 -v /tmp/mongo/data:/data/db mongo`
+- [MongoDB Docker](https://hub.docker.com/_/mongo): `docker run --name mongo -d -p 27017:27017 -v /tmp/mongo/data:/data/db mongo`
 - [MongoDB Client](https://robomongo.org/download):
   - Download Robo 3T only.
   - Add connection to localhost on port 27017.
@@ -46,6 +46,6 @@ The schema registry consists of the following abstractions.
 ## Relationship with Event Bus
 
    - When configured to use a schema registry, the event bus will validate messages against a registered schema according to event topic name.
-   - Publishing to an event topic without a registered schema will result in an error.
+   - If `AddSchemaOnPublish` is set to `false`, publishing to an event topic without a registered schema will result in an error.
    - If a message fails schema validation, the event bus will generate an error.
 
