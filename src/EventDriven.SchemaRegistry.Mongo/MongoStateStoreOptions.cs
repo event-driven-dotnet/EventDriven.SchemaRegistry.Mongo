@@ -8,16 +8,16 @@ namespace EventDriven.SchemaRegistry.Mongo
         /// <summary>
         /// Mongo connection string.
         /// </summary>
-        public string ConnectionString { get; set; }
+        public string ConnectionString { get; set; } = "mongodb://localhost:27017";
 
         /// <summary>
         /// Mongo database name.
         /// </summary>
-        public string DatabaseName { get; set; }
+        public string DatabaseName { get; set; } = "schema-registry";
 
         /// <summary>
         /// Mongo schemas collection name.
         /// </summary>
-        public string SchemasCollectionName { get; set; }
+        public string SchemasCollectionName { get; set; } = "schemas";
     }
 }
