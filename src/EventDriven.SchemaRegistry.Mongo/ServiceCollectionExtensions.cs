@@ -28,16 +28,12 @@ namespace Microsoft.Extensions.DependencyInjection
             configureStateStoreOptions.Invoke(schemaOptions);
             services.Configure(configureStateStoreOptions);
 
-            // Register Mongo database and schema collection
-            services.AddSingleton<IMongoDatabase>(_ =>
+            // Register IMongoCollection<MongoSchema>
+            services.AddSingleton(sp =>
             {
-                var client = new MongoClient(schemaOptions.ConnectionString);
-                return client.GetDatabase(schemaOptions.DatabaseName);
-            });
-            services.AddSingleton<IMongoCollection<MongoSchema>>(sp =>
-            {
-                var context = sp.GetRequiredService<IMongoDatabase>();
-                return context.GetCollection<MongoSchema>(schemaOptions.SchemasCollectionName);
+                var context = new MongoSchemaRegistryDbContext(new MongoClient(schemaOptions.ConnectionString),
+                    schemaOptions.DatabaseName, schemaOptions.SchemasCollectionName);
+                return context.MongoSchemas;
             });
             
             // Register services

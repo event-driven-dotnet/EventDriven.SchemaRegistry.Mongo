@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>1.0.0-beta3</Version>
+        <Version>1.0.0-beta4</Version>
         <Authors>Tony Sneed</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>eda-logo.jpeg</PackageIcon>
@@ -12,7 +12,7 @@
         <RepositoryUrl>https://github.com/event-driven-dotnet/EventDriven.SchemaRegistry.Mongo.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>schema-registry event-driven event-driven-architecture</PackageTags>
-        <PackageReleaseNotes>https://github.com/event-driven-dotnet/EventDriven.SchemaRegistry.Mongo/releases/tag/v1.0.0-beta3</PackageReleaseNotes>
+        <PackageReleaseNotes>https://github.com/event-driven-dotnet/EventDriven.SchemaRegistry.Mongo/releases/tag/v1.0.0-beta4</PackageReleaseNotes>
         <PackageId>EventDriven.SchemaRegistry.Mongo</PackageId>
         <RootNamespace>EventDriven.SchemaRegistry.Mongo</RootNamespace>
     </PropertyGroup>
