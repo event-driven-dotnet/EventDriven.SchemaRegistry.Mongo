@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>1.1.0</Version>
+        <Version>1.2.0-beta1</Version>
         <Authors>Tony Sneed</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>eda-logo.jpeg</PackageIcon>
@@ -12,7 +12,7 @@
         <RepositoryUrl>https://github.com/event-driven-dotnet/EventDriven.SchemaRegistry.Mongo.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>schema-registry event-driven event-driven-architecture</PackageTags>
-        <PackageReleaseNotes>https://github.com/event-driven-dotnet/EventDriven.SchemaRegistry.Mongo/releases/tag/v1.1.0</PackageReleaseNotes>
+        <PackageReleaseNotes>https://github.com/event-driven-dotnet/EventDriven.SchemaRegistry.Mongo/releases/tag/v1.2.0-beta1</PackageReleaseNotes>
         <PackageId>EventDriven.SchemaRegistry.Mongo</PackageId>
         <RootNamespace>EventDriven.SchemaRegistry.Mongo</RootNamespace>
 	    <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -21,11 +21,12 @@
     <ItemGroup>
         <None Include="..\..\images\eda-logo.jpeg">
             <Pack>True</Pack>
-            <PackagePath></PackagePath>
+            <PackagePath>\</PackagePath>
         </None>
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="EventDriven.DependencyInjection.URF.Mongo" Version="1.1.0-beta3" />
       <PackageReference Include="EventDriven.SchemaRegistry.Abstractions" Version="1.1.0" />
       <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
       <PackageReference Include="MongoDB.Driver" Version="2.14.1" />

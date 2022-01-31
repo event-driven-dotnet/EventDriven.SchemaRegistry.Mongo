@@ -1,9 +1,11 @@
+using EventDriven.DependencyInjection.URF.Mongo;
+
 namespace EventDriven.SchemaRegistry.Mongo
 {
     /// <summary>
     /// Mongo state Store options.
     /// </summary>
-    public class MongoStateStoreOptions
+    public class MongoStateStoreOptions : IMongoDbSettings
     {
         /// <summary>
         /// Mongo connection string.
@@ -18,6 +20,6 @@ namespace EventDriven.SchemaRegistry.Mongo
         /// <summary>
         /// Mongo schemas collection name.
         /// </summary>
-        public string SchemasCollectionName { get; set; } = "schemas";
+        public string CollectionName { get; set; } = "schemas";
     }
 }
