@@ -48,7 +48,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.Configure(configureStateStoreOptions);
 
             // Register IMongoCollection<MongoSchema>
-            services.AddSingleton(sp =>
+            services.AddSingleton(_ =>
             {
                 var context = new MongoSchemaRegistryDbContext(new MongoClient(schemaOptions.ConnectionString),
                     schemaOptions.DatabaseName, schemaOptions.CollectionName);
