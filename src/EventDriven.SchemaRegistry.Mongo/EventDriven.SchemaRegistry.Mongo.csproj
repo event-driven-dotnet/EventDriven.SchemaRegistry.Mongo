@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>1.3.0</Version>
+        <Version>1.4.0</Version>
         <Authors>Tony Sneed</Authors>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>eda-logo.jpeg</PackageIcon>
@@ -12,7 +12,7 @@
         <RepositoryUrl>https://github.com/event-driven-dotnet/EventDriven.SchemaRegistry.Mongo.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>schema-registry event-driven event-driven-architecture</PackageTags>
-        <PackageReleaseNotes>https://github.com/event-driven-dotnet/EventDriven.SchemaRegistry.Mongo/releases/tag/v1.3.0</PackageReleaseNotes>
+        <PackageReleaseNotes>https://github.com/event-driven-dotnet/EventDriven.SchemaRegistry.Mongo/releases/tag/v1.4.0</PackageReleaseNotes>
         <PackageId>EventDriven.SchemaRegistry.Mongo</PackageId>
         <RootNamespace>EventDriven.SchemaRegistry.Mongo</RootNamespace>
 	    <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -26,11 +26,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="EventDriven.DependencyInjection.URF.Mongo" Version="1.2.2" />
+      <PackageReference Include="EventDriven.DependencyInjection.URF.Mongo" Version="1.3.0" />
       <PackageReference Include="EventDriven.SchemaRegistry.Abstractions" Version="1.1.0" />
-      <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
-      <PackageReference Include="MongoDB.Driver" Version="2.21.0" />
-      <PackageReference Include="URF.Core.Mongo" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+      <PackageReference Include="MongoDB.Driver" Version="2.28.0" />
+      <PackageReference Include="URF.Core.Mongo" Version="8.2.28" />
     </ItemGroup>
 
 </Project>
